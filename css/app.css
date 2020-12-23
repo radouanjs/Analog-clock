@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Ustulo Dislay';
+    src: url('../webfonts/Ustulo_Display.ttf');
+}
+body{
+    font-size: 62.5%;
+    font-family: "Microsoft Sans Serif";
+    background-color: #e78464;
+}
+/*Flex-box Properties*/
+    .flex{
+        display: flex;
+    }
+    .fd-c{
+        flex-direction: column;
+    }
+    .j-c-center{
+        justify-content: center;
+    }
+    .j-c-sa{
+        justify-content: space-around;
+    }
+    .j-c-sb{
+        justify-content: space-between;
+    }
+    .a-i-center{
+        align-items: center;
+    }
+/*Flex-box Properties*/
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-size: 7vh;
+    color: #f1d0d0;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 0.7rem;
+}
+.analog-clock{
+    top: 90%;
+    width: 45vw;
+    height: 100px;
+    color:#435056;
+    font-size: 10vh;
+    font-weight: 800;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px){
+    .clock{
+        width: 80vw;
+        text-align: center;
+    }
+    h1{
+        font-size: 10vw;
+        margin-top: 0.3rem;
+    }
+    .canva{
+        width: 80%;
+        height: 350px;
+    }
+}
